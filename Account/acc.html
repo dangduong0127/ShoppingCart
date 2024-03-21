@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body style="text-align: center;">
+    <a href="../index.html">Trang chu</a>
+    <h1 id="welcome" style="text-align: center;"></h1>
+    <button onclick="Logout()">Dang xuat</button>
+    <script>
+        const welcome = document.getElementById("welcome")
+        const LogIned = localStorage.getItem("LoggedInUser")
+        welcome.innerHTML = `Xin chào ${LogIned}!!!`
+
+        let Logout = () => {
+            localStorage.removeItem("LoggedInUser")
+            window.location = "../index.html"
+        }
+    </script>
+</body>
+
+</html>

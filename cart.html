@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shopping Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="Container">
+      <div class="top-menu">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" /></a>
+        </div>
+
+        <div class="navigation">
+          <a href="" class="nav-item">Sản phẩm</a>
+          <a href="" class="nav-item">Sale</a>
+          <a href="" class="nav-item">Thư viện</a>
+          <a href="" class="nav-item">Giới thiệu</a>
+        </div>
+
+        <div class="icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a href="cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div id="cartAmount" class="cartAmount">0</div>
+          </a>
+          <a href="login/login.html">
+            <i class="fa-solid fa-user" id="users"></i>
+          </a>
+          <div class="lines"></div>
+          <i class="fa-solid fa-globe"></i>
+        </div>
+      </div>
+
+      <div class="Bill">
+        <div id="total" class="text-center">
+          <h1>Total Bill: <span id="max">2.000.000 VND</span></h1>
+          <div class="btn-CK">
+            <button class="btn-checkout">Checkout</button>
+            <button onclick="ClearAllPr()" class="btn-Clear">Clear Cart</button>
+          </div>
+        </div>
+
+        <div id="Shopping-Cart" class="Shopping-Cart">
+          <!-- <div class="single-prs-bill">
+            <div id="product-id-${ShopItemsData[i].id}" class="single-product">
+              <div class="name-thumbnail">
+                <img src="img/Fied-Trip-deck.jpg" />
+                <h5 class="product-name">Ten San Pham<span>(x1)</span></h5>
+              </div>
+              <div class="pr-content">
+                <h5>2.000.000 đ</h5>
+                <div class="buttons">
+                  <i onclick="decrement()" class="fa-solid fa-minus"></i>
+                  <div id="" class="quantity">0</div>
+                  <i onclick="increment()" class="fa-solid fa-plus"></i>
+                </div>
+                <div class="Delete">
+                  <i class="fa-solid fa-x"></i>
+                  <p onclick="removeItems()">Delete</p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="JS/data.js"></script>
+    <script src="JS/cart.js"></script>
+  </body>
+</html>

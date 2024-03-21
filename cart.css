@@ -1,0 +1,119 @@
+/* CSS style rules for label and some buttons */
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.HomeBtn {
+  background-color: #212529;
+  color: #fff;
+  border: none;
+  padding: 7px 10px 7px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#total > h1 > span {
+  color: rgb(0, 173, 0);
+}
+
+.Shopping-Cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-prs-bill {
+  /* display: inline-block; */
+  width: 60vw;
+  padding: 30px 30px 0px 30px;
+  background-color: rgb(255, 42, 0);
+}
+
+.single-product {
+  /* padding-top: 0px;
+    padding-bottom: 0px; */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px;
+}
+
+.single-product > img {
+  margin-right: 20px;
+  width: 30%;
+}
+
+.product-name {
+  margin-right: 50px;
+  font-size: 20px !important;
+}
+.name-thumbnail {
+  display: flex;
+  align-items: center;
+}
+.name-thumbnail > img {
+  width: 30%;
+}
+
+.pr-content {
+  display: flex;
+  align-items: center;
+}
+.pr-content > h5 {
+  width: 250px;
+}
+.pr-content > .buttons {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.pr-content > .Delete {
+  margin: auto;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.Delete > i {
+  display: inline-block;
+  padding: 10px;
+}
+
+.Delete {
+  /* height: 50px; */
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.Delete:hover {
+  color: #ed270d;
+}
+
+.btn-checkout {
+  background-color: green;
+  color: #fff;
+  border: none;
+  width: auto;
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.btn-Clear {
+  background-color: red;
+  color: #fff;
+  border: none;
+  width: auto;
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 7px;
+}
