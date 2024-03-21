@@ -91,5 +91,8 @@ function Calculation() {
   for (let i in basket) {
     TotalQuantity += basket[i].item;
   }
-  cartAmout.innerText = TotalQuantity;
+
+  TotalQuantity > 0
+    ? (cartAmout.innerText = TotalQuantity)
+    : (cartAmout.innerText = "0");
 }

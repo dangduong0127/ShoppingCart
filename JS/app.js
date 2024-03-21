@@ -3,6 +3,7 @@ let basket = JSON.parse(localStorage.getItem("Cart")) || [];
 
 let generateShop = () => {
   for (let key in ShopItemsData) {
+    console.log(ShopItemsData[key]);
     prs.innerHTML += `
     <div id="product-id-1" class="single-product">
     <img src="${ShopItemsData[key].image}">
@@ -57,6 +58,8 @@ function addToCart(id) {
     alert("Vui lòng thêm số lượng!!!");
   }
 }
+
+//Cal Cart quantity
 Calculation();
 function Calculation() {
   const cartAmout = document.getElementById("cartAmount");
@@ -64,5 +67,9 @@ function Calculation() {
   for (let i in basket) {
     TotalQuantity += basket[i].item;
   }
-  cartAmout.innerText = TotalQuantity;
+  if (TotalQuantity > 0) {
+    cartAmout.innerText = TotalQuantity;
+  } else {
+    cartAmout.innerText = "0";
+  }
 }
